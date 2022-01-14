@@ -10,9 +10,11 @@ You can use this code to load a clean version of `ntdll.dll` from the filesystem
 # Compilation
 
 You can directly compile the source code with the following command:
+
 `nim c -d:release --opt:size --passC:"-masm=intel" Main.nim`
 
 In case you get the error "cannot open file: winim/lean", you should also install winim dependency:
+
 `nimble install winim`
 
 # Reference
