@@ -1,4 +1,5 @@
 # ParallelNimcalls
+
 This repo contains the Nim variant of the recent MDSec's research which is Parallel Syscalls.
 
 You can use this code to load a clean version of `ntdll.dll` from the filesystem.
@@ -7,7 +8,13 @@ You can use this code to load a clean version of `ntdll.dll` from the filesystem
 
 
 # Compilation
+
+You can directly compile the source code with the following command:
 `nim c -d:release --opt:size --passC:"-masm=intel" Main.nim`
 
+In case you get the error "cannot open file: winim/lean", you should also install winim dependency:
+`nimble install winim`
+
 # Reference
+
 - https://www.mdsec.co.uk/2022/01/edr-parallel-asis-through-analysis/
